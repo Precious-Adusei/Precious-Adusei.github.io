@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    background-image: url("portfolio1c.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-image: url("/Portfolio_Website_1/portfolio1.jpeg");/*to put the background pic, specify folder name image is in*/
+    background-size: cover;/*to make the pic appear as just one large pic instead of small multiple ones*/
+    background-position: center;/*align pic in the center*/
+    background-color: black;
+}
+nav{
+    display: flex;/*display all items separately*/
+    align-items: center;/*align text in the center*/
+    justify-content: space-between;/*pu a space between my texts*/
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;/*change the words portfolio1 into white*/
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;/*cursor will change into a pointed one when it rests on it*/
+}
+span{
+    color: red;/*change the color of only 'lio' to red*/
+}
+nav ul li{/*select the entire unordered list to style them instead of using &nbsp in html*/
+    list-style-type: none;
+    display: inline-block;/*will put them in one horizontal line*/
+    padding: 10px 25px;/*all paddings organized*/
+}
+nav ul li a{/*select the hyperlinks in the anchors of the entire list*/
+    color: rgb(122, 177, 187);
+    text-decoration: none;/*remove the underline in the hyperlinks*/
+    font-weight: bold;/*bolden the font*/
+    text-transform: capitalize;/*capitalize the first letters*/
+}
+nav ul li a:hover{/*what happens when you hover the mouse on the anchor lists*/
+    color: rgb(233, 31, 31);
+    transition: .4s;/*the time it takes to change colors*/
+}
+.btn{
+    background-color: red;
+    color: white;
+    text-decoration: none;/*removed the underline*/
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;/*makes the border round*/
+    transition: transform .4s;
+}
+.btn:hover{/*what happens when you hover mouse on it*/
+    transform: scale(1.2);/*how big it becomes*/
+}
+.content{/*work on the content part*/
+    position: absolute;/*element is absolutely fixed*/
+    top: 50%;/*it moves down a bit*/
+    left: 8%;/*moves to the left a bit*/
+    transform: translateY(-50%);/*move this element left and upwards by 50% of the computed dimension along the axis*/
+}
+h1{/*works on the h1 element*/
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{/*works on h3 element*/
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{/*works on only the first input of class newslatter*/
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid red;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{/*works on the last input of the newslatter class*/
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;/*puts a shadow around the box*/
+    top: 6px;/*moves it down a little bit*/
+    right: 6px;/*moves it so it lands in the first input*/
+}
+.about{/*stlye for the about section*/
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;/*changes the background color*/
+}
+.about img{/*style for the about image*/
+    height: auto;
+    width: 430px;
+    border-radius: 50%;/*makes the pic round*/
+}
+.about-text{/*style for the about text*/
+    width: 550px;
+}
+.main{/*style for the div class main*/
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;/*moves the stuff side by side*/
+    align-items: center;/*align items in the center*/
+    justify-content: space-around;
+}
+.about-text h2{/*style for the h2 element of the about text*/
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{/*style for the h5 element of about text*/
+    color: wheat;/*wheat color lol, never knew that was an actual color, was typing white and I made a mistake*/
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;/*removed the shading around the button*/
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{/*what happens when you hover the cursor on the button*/
+    background-color: transparent;/*color turns transparent and reflects the background color*/
+    border: 2px solid red;/*there's a red border around the transparent background after pointing the mouse*/
+    cursor: pointer;/*mouse cursor turns to a pointer*/
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 35px;/*pusshes the text below it down a bit*/
+}
+.pra p{
+    color: purple;
+    font-size: 16px;
+    line-height: 27px;/*how the height of every line should be*/
+    margin-bottom: 95px;
+}
+.card .button{/*works on the read more button, copied everything from previous css button and pasted here with minor modifications*/
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;/*removed the shading around the button*/
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;    
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: rgb(18, 24, 24);
+    display: flex;
+    align-items: center;
+    flex-direction: column;/*puts at the top middle*/
+    justify-content: center;/*will then put text in the middle*/
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;/*bolden the text*/
+    margin-bottom: 30px;
+}
+.contact-me .button-two{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;/*removed the shading around the button*/
+    font-weight: bold;
+    padding: 8px 22px;
+    border-radius: 30px;
+    transition: .4s;    
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+footer{
+    color: black;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;/*all items will be in a horizontal line*/
+    flex-direction: column;/*all items in a p or div will be horizontal by their specific p or div*/
+    align-items: center;
+    justify-content: center;/*pushes content to the dead center of the page*/
+}
+footer p:nth-child(1){/*for the first child(1) since we have several childred*/
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){/*for the second child(2)*/
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orchid;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: black;/*icons color becomes black*/
+    text-decoration: none;/*removes the underline of the hyperlink*/
+    font-size: 20px;/*makes pic bigger*/
+}
+.social a:hover{
+    transform: scale(1.2);/*becomes bigger when you point the mouse cursor on it*/
+    transition: .4s;
+}
